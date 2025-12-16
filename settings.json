@@ -1,0 +1,61 @@
+{
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.compositeKeys": {
+        "jk": {
+            "command": "vscode-neovim.lua",
+            "args": [
+                [
+                    "local code = require('vscode')",
+                    "code.action('vscode-neovim.escape')",
+                    "code.action('workbench.action.files.save')",
+                ],
+            ],
+        },
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "top",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14.5,
+    "openapi.platformUrl": "https://platform.42crunch.com",
+    "openapi.platformAuthType": "anond-token",
+    "openapi.securityAuditToken": "",
+    "openapi.platformServices": "",
+    "openapi.platformScandManager": {
+        "url": "",
+        "auth": "none",
+        "timeout": 300,
+        "header": {
+            "name": "",
+            "value": ""
+        }
+    },
+    "openapi.docker": {
+        "replaceLocalhost": true,
+        "useHostNetwork": true
+    },
+    "openapi.platformAuditRuntime": "platform",
+    "openapi.platformConformanceScanRuntime": "cli",
+    "openapi.platformConformanceScanImage": "42crunch/scand-agent:v2",
+    "openapi.platformRepository": "https://repo.42crunch.com/downloads",
+    "openapi.cliDirectoryOverride": "",
+    "openapi.platformTemporaryCollectionName": "IDE Temp Collection",
+    "openapi.platformMandatoryTags": "",
+    "openapi.internalFeatures": false,
+    "openapi.internalUseDevEndpoints": false,
+    "openapi.approvedHostnames": [],
+}

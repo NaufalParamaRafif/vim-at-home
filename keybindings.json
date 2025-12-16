@@ -1,0 +1,141 @@
+// Place your key bindings in this file to override the defaults
+[
+  // code
+  {
+    "key": "shift+alt+l",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "key": "shift+alt+h",
+    "command": "editor.action.smartSelect.shrink"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "space ,",
+    "command": "workbench.action.showAllEditors",
+    "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)",
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "shift-l",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "shift-h",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "s",
+    "command": "jumpy2.toggle",
+    "when": "neovim.mode =~ /^normal$|^visual$/ && !jumpy2.jump-mode && editorTextFocus"
+  },
+  {
+    "key": "escape",
+    "command": "jumpy2.exit",
+    "when": "neovim.init && jumpy2.jump-mode && editorTextFocus"
+  },
+  {
+    "key": "space b d",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w ctrl+w",
+    "command": "-workbench.action.focusNextGroup",
+    "when": "!editorTextFocus && !filesExplorerFocus && !inSearchEditor && !replaceInputBoxFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w up",
+    "command": "-workbench.action.navigateUp",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w k",
+    "command": "-workbench.action.navigateUp",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w down",
+    "command": "-workbench.action.navigateDown",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w j",
+    "command": "-workbench.action.navigateDown",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w left",
+    "command": "-workbench.action.navigateLeft",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w h",
+    "command": "-workbench.action.navigateLeft",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w right",
+    "command": "-workbench.action.navigateRight",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w l",
+    "command": "-workbench.action.navigateRight",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "space w -",
+    "command": "workbench.action.splitEditorDown",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "ctrl+w s",
+    "command": "-workbench.action.splitEditorDown",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "space w \\",
+    "command": "workbench.action.splitEditorRight",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "ctrl+w v",
+    "command": "-workbench.action.splitEditorRight",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "space c e",
+    "command": "editor.action.marker.next",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+]
+
+
+
+// change search 
