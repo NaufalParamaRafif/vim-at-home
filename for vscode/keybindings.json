@@ -1,65 +1,83 @@
 // Place your key bindings in this file to override the defaults
 [
-  // code
-  {
+  { // show parameter hints
+    "key": "ctrl+p",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  { // expand text selection (smart)
     "key": "shift+alt+l",
     "command": "editor.action.smartSelect.expand"
   },
-  {
+  { // shrink text selection (smart)
     "key": "shift+alt+h",
     "command": "editor.action.smartSelect.shrink"
   },
-  {
+  { // navigate left workbench
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft"
   },
-  {
+  { // navigate right workbench
     "key": "ctrl+l",
     "command": "workbench.action.navigateRight"
   },
-  {
+  { // navigate up workbench
     "key": "ctrl+k",
     "command": "workbench.action.navigateUp"
   },
-  {
+  { // navigate down workbench
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown"
   },
-  {
+  { // choose opened tab
     "key": "space ,",
     "command": "workbench.action.showAllEditors",
     "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)",
   },
-  {
+  { // hide side bar
     "key": "space e",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
   },
-  {
+  { // open past opened tab
     "key": "shift-l",
     "command": "workbench.action.nextEditorInGroup",
     "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
   },
-  {
+  { // open next opened tab
     "key": "shift-h",
     "command": "workbench.action.previousEditorInGroup",
     "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
   },
-  {
+  { // search jumpy
     "key": "s",
     "command": "jumpy2.toggle",
     "when": "neovim.mode =~ /^normal$|^visual$/ && !jumpy2.jump-mode && editorTextFocus"
   },
-  {
+  { // exit jumpy
     "key": "escape",
     "command": "jumpy2.exit",
     "when": "neovim.init && jumpy2.jump-mode && editorTextFocus"
   },
-  {
+  { // close current editor tab
     "key": "space b d",
     "command": "workbench.action.closeActiveEditor",
     "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
   },
+  {
+    "key": "space c e",
+    "command": "editor.action.marker.next",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+  { // open file/editor to the right
+    "key": "space w \\",
+    "command": "workbench.action.splitEditorRight",
+    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+  },
+
+  
+
+  
   {
     "key": "ctrl+w",
     "command": "-workbench.action.closeActiveEditor"
@@ -120,22 +138,12 @@
     "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
   },
   {
-    "key": "space w \\",
-    "command": "workbench.action.splitEditorRight",
-    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
-  },
-  {
     "key": "ctrl+w v",
     "command": "-workbench.action.splitEditorRight",
     "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
   },
   {
-    "key": "space c e",
-    "command": "editor.action.marker.next",
-    "when": "neovim.mode != 'insert' && (editorTextFocus || !inputFocus)"
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
   },
 ]
-
-
-
-// change search 

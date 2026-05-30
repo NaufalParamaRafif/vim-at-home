@@ -1,0 +1,22 @@
+g d (go to definition)
+ctrl q (nvim hover def 
+shift k (nvim hover definiton
+g shift i (nvim go to implementation
+g y (go to type defintion
+g f (go to declaration
+g r (go to references
+ctrl p (show parameter
+ctrl . (code action
+f2 (rename symbol
+(peek call hierarcy
+(peek type hierarcy
+(incomings call
+(outgoing call
+ctrl shift o(find symbol
+(document symbol 
+(workspace symbol ???
+ctrl shift i(format docs
+(go to test
+space + c + e error
+
+ctrl t and ctrl o (???)

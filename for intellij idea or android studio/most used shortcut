@@ -1,0 +1,59 @@
+masih ragu
+ctrl + g (> ide)
+ctrl + f (> ide)
+ctrl + n (> ide) (vim???)
+ctrl + o 
+ctrl + r (vim)
+ctrl + t (for what)
+ctrl + u
+ctrl + 6
+ctrl + w (> ide)
+
+// enak sih, cuma
+ctrl + p (hmm... bingung, entah tapi kepake di vim)
+ctrl + n (cenderung vim)
+
+ctrl + j nanti apakek
+
+ctrl + l kayaknya guna di vim
+
+hal baru:
+ctrl i, o vim
+ctrl ] vim
+
+IDE
+ctrl b go to dec/def (op)
+ctrl e recent file popup (op)
+ctrl f nyari 
+ctrl g go line (op)
+ctrl h type hierary (op)
+ctrl j insert template (op)
+ctrl k commit
+ctrl m (audah slh ctry bingung)
+ctrl o (override cuma di vim penting)
+ctrl p (info autocomplete) (op)
+ctrl q (quick docs) (op)
+ctrl t (???)
+ctrl u (cuma udah digantiin vim fungsinya ctrl ]) (op?)
+ctrl \ tergantung 
+ctrl pageup, pagedown pndah page
+ctrl up, down pindah symbol/method atas bawah (tergantung)
+ctrl shift (angka) nandain
+ctrl (angka) fokus ke open apalah
+Ctrl+Alt+L Auto format code. (op)
+Ctrl+W Expand selection, + shift w reverse (op)
+Ctrl+Alt+O Optimize imports otomatis. (op)
+shift shift search all
+ctrl ` customize
+ctrl alt b
+ctrl b
+ctrl u
+
+shift enter (ide)
+
+Jump to next error F2
+Jump to previous error Shift + F2
+Show error description Ctrl + F1 
+Show quick fix suggestions Alt + Enter
+Open Messages window Alt + 0 
+Open Problems/Build window Alt + 6
